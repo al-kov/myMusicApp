@@ -1,0 +1,21 @@
+<div class="wholeSongs">
+  <div class="container">
+    <h1 class="songsHero">Songs</h1>
+    <div class="row songSection">
+      <div class="col-md-3" ng-repeat="song in songs">
+        <div class="songsContainer">
+          <div class="songsHeader">
+            <h1 class="songsHeading">{{ song.title }}</h1>
+          </div>
+          <div class="songBody">
+            <p><strong>Artist: </strong> {{ song.artist }}</p>
+            <p><strong>Album: </strong>{{ song.album }}</p>
+            <p><strong>Duration: </strong>{{ song.duration }} </p>
+            <p><strong>Genre: </strong>{{ song.genre.join(", ") }}</p>
+            <p><strong>Mood: </strong>{{ song.mood.join(", ") }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
