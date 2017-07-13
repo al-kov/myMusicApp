@@ -12,6 +12,7 @@ JQuery
 
 
 ![playlist image](http://imgur.com/zboZe7D.png)
+![Advice Image](http://i.imgur.com/tOcyBAA.png)
 
 #MUSICAL MOOD SELECTOR
 
