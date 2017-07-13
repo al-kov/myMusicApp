@@ -15,7 +15,7 @@ body {
   background-color: black;
   padding-top: 36px;
   padding-left: 30px;
-}
+} 
 
 .customNavItems a {
   display: inline;
@@ -51,7 +51,7 @@ body {
   margin: 5px;
 }
 
-.musicGenre,.musicMood {
+.musicGenre, .musicMood {
   color:white;
   padding: 3px;
 }
@@ -134,6 +134,7 @@ h4 {
 .playlistGo {
   color:white;
 }
+
 .playlistSongsContainer {
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFwi2zClTsCmGdKLJ9KfSX5-JXvtw3c8HI21Xs7N9A9Y2gr_a");
   background-repeat: no-repeat;
@@ -142,8 +143,8 @@ h4 {
   margin:10px 0;
   min-height:480px;
    }
-   
-   .playlistSongBody {
+
+  .playlistSongBody {
   padding: 20px;
   margin-bottom: 40px;
   color:#dcd7d7;

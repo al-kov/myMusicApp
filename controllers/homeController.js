@@ -13,6 +13,7 @@ angular
     } else {
       $scope.goodDay = "Good Morning!";
     }
+    
     $scope.genre = ["pop", "funk", "dance", "house", "hip-hop", "R&B", "world", "rock", "rap", "blues", "disco", "soul", "alternative", "soft rock", "contemporary", "classical", "opera", "instrumental"];
     $scope.mood = ["romantic", "joyful", "focused", "easy", "calm", "energetic", "strong", "bouncy", "mysterious"];
     $scope.genre = "";

@@ -12,7 +12,7 @@
         <option value="opera">Opera</option>
         <option value="house">House</option>
         <option value="hip-hop">Hip-Hop</option>
-        <option value="R&B">R & B</option>
+        <option value="R&amp;B">R &amp; B</option>
         <option value="world">World</option>
         <option value="rock">Rock</option>
         <option value="rap">Rap</option>
@@ -44,14 +44,14 @@
   </div>
   <div class="row gotItButton">
     <button type="button" ng-click="getPlaylist()" class="btn btn-primary btn-lg outline text-center">Got it!</button>
-    <h4 ng-show="errorMessage">(Please make your selections.)
-    </h4>
+    <h4 ng-show="errorMessage">(Please make your selections.)</h4>
   </div>
 </div>
 <script>
   $('.selectpicker').selectpicker({
     size: 4
   });
+
   $('.selectpicker2').selectpicker({
     size: 4
   });

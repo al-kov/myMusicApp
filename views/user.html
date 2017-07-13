@@ -1,20 +1,20 @@
 <div class="wholeUser">
   <div class="container">
     <h1 class="userHero ">Current Playlist...</h1>
-    <div class="row userSection ">
-      <div class="col-md-3 " ng-repeat="song in user.playlist ">
-        <div class="playlistSongsContainer ">
-          <div class="songsHeader ">
-            <h1 class="playlistSongsHeading ">{{ song.title }}</h1>
+    <div class="row userSection">
+      <div class="col-md-3 " ng-repeat="song in user.playlist">
+        <div class="playlistSongsContainer">
+          <div class="songsHeader">
+            <h1 class="playlistSongsHeading">{{ song.title }}</h1>
           </div>
-          <div class="playlistSongBody ">
+          <div class="playlistSongBody">
             <p><strong>Artist: </strong> {{ song.artist }}</p>
             <p><strong>Album: </strong>{{ song.album }}</p>
             <p><strong>Duration: </strong>{{ song.duration }} </p>
           </div>
         </div>
       </div>
-      <div ng-show="playlistMessage">
+      <div ng-show="user.playlist.length === 0">
         <h2 class="playlistGo">Please go select your songs...</h2>
         <a ui-sref="home"><button type="button" class="btn btn-danger btn-lg">Let's Go!</button></a>
       </div>

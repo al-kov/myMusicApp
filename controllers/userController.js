@@ -2,7 +2,7 @@ angular
   .module("mySongApp")
   .controller("userController", function ($scope, userService, songsService) {
 
-    console.log($scope.user)
+    console.log($scope.user);
     $scope.songs = songsService.getSongs();
     console.log($scope.songs);
 
@@ -18,6 +18,7 @@ angular
     for (var i = 0; i < $scope.user.genre.length; i++) {
       for (var j = 0; j < $scope.songs.length; j++) {
         if ($scope.songs[j].genre.indexOf($scope.user.genre[i]) > -1) {
+          // checking if song already is in playlist
           if (playlist.indexOf($scope.songs[j]) == -1) {
             playlist.push($scope.songs[j])
           }
@@ -36,15 +37,6 @@ angular
         }
       }
     }
-
     $scope.user.playlist = playlist
-    console.log(playlist)
-
-    if ($scope.user.playlist.length === 0) {
-      $scope.playlistMessage = true;
-
-    }
-    else {
-      $scope.playlistMessage = false;
-    }
+    console.log("Playlist: " + playlist)
   })

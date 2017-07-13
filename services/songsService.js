@@ -4,6 +4,7 @@ angular
 
     var songId = 0;
     var _songs = [];
+
     function Song(id, title, artist, album, duration, genre, mood) {
       this.id = id;
       this.title = title;
@@ -13,6 +14,7 @@ angular
       this.genre = genre;
       this.mood = mood;
     }
+    
     _songs.push(new Song(songId++, "Shape of You", "Ed Sheeran", " ÷ ", "3:53", ["pop", "dance", "house"], ["bouncy", "energetic"]))
     _songs.push(new Song(songId++, "Uptown Funk", "Mark Ronson and Bruno Mars", "Uptown Special", "4:30", ["funk", "dance", "party"], ["joyful", "energetic"]))
     _songs.push(new Song(songId++, "Beat It", "Michael Jackson", "Thriller", "4:18", ["dance", "pop"], ["energetic", "bouncy"]))
@@ -55,6 +57,7 @@ angular
     _songs.push(new Song(songId++, "Something Just Like This", "Chainsmokers, Coldplay", "Memories: Do Not Open", "4:07", ["dance", "electronic"], ["romantic", "bouncy"]))
     _songs.push(new Song(songId++, "Stay", "Zedd & Alessia Cara", " single", "3:30", ["electronic", "dance"], ["romantic", "mysterious", "easy"]))
     _songs.push(new Song(songId++, "It Ain't Me", "Kygo x Selena Gomez", "single", "3:40", ["electronic", "soul"], ["mysterious", "romantic"]))
+    
     this.getSongs = function () {
       return _songs
     }
